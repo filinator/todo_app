@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background: url(/img/background.jpg);
+    background: url("/img/background.jpg");
     padding: 50px;
 }
 
@@ -170,7 +170,7 @@ hr {
 }
 
 .todo__checkbox:checked {
-    background: url(/img/v.jpg) center/cover no-repeat;
+    background: url("/img/v.jpg") center/cover no-repeat;
 }
 
 .todo__button-remove {
@@ -180,7 +180,7 @@ hr {
     pointer-events: none;
     border-radius: 50%;
     border: 1px solid #ddd;
-    background: url(/img/x.JPG) center/cover no-repeat;
+    background: url("/img/x.JPG") center/cover no-repeat;
     cursor: pointer;
     margin-left: 10px;
 }
