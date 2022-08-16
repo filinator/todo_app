@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <script src="index.js" type="module" defer></script>
+        <title>TODO LIST..</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>TODO LIST..</h1>
+
+            <hr />
+            <div class="todo__container">
+                <input
+                    placeholder="Enter your todo.."
+                    type="text"
+                    class="todo__input"
+                    data-input
+                />
+                <button class="todo__button todo__button-add" data-button>
+                    ADD TODO
+                </button>
+            </div>
+
+            <div class="todo__buttons">
+                <button
+                    class="todo__button todo__button-delete-all"
+                    data-button-delete-all
+                >
+                    DELETE ALL
+                </button>
+                <button
+                    class="todo__button todo__button-delete-last"
+                    data-button-delete-last
+                >
+                    DELETE LAST
+                </button>
+                <button
+                    class="todo__button todo__button-delete-completed"
+                    data-button-delete-completed
+                >
+                    DELETE COMPLETED
+                </button>
+            </div>
+
+            <hr />
+
+            <div class="todo_container-search">
+                <button
+                    class="todo__button todo__button-show-all"
+                    data-button-show-all
+                >
+                    SHOW ALL
+                </button>
+
+                <input
+                    type="text"
+                    class="todo__input-search"
+                    placeholder="Search.."
+                    data-input-search
+                />
+
+                <button
+                    class="todo__button todo__button-show-completed"
+                    data-button-show-completed
+                >
+                    SHOW COMPLETED
+                </button>
+            </div>
+
+            <hr />
+
+            <div class="todo__amount_container">
+                <div class="todo__amount" data-amount>All: 0</div>
+                <div class="todo__amount-completed" data-amount-completed>
+                    Completed: 0
+                </div>
+            </div>
+
+            <div class="todos__container" data-todo-container></div>
+        </div>
+
+        <template class="todo__template" data-todo-template>
+            <div class="todo__item" data-todo-item>
+                <input
+                    type="checkbox"
+                    class="todo__checkbox"
+                    id="todo__checkbox"
+                    data-todo-checkbox
+                />
+                <div class="todo__title" data-todo-title></div>
+                <div class="todo__date"></div>
+                <button class="todo__button-remove" data-button-remove></button>
+            </div>
+        </template>
+    </body>
+</html>
